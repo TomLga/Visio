@@ -1,0 +1,122 @@
+*
+{
+    margin: 0;
+    padding: 0px 15px;
+    box-sizing: border-box;
+ 
+    font-family:sans-serif ;
+    font-weight: 300;
+}
+.navbar{
+    
+    display: flex;
+}
+
+
+.carImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw; 
+    height: 80vh;
+
+
+  
+}
+
+#logo{
+    width: 40%;
+}
+
+#menu{
+    width: 8%;
+    margin-left: auto;
+  
+    
+}
+
+
+.par_Symbols{
+    display: flex;
+    margin-top: 100px;
+    padding-left: 30px;
+
+}
+
+
+.firstText{
+    word-wrap:break-word;
+    font-size: 24px;
+    font-weight: 300;
+  
+}
+
+.symbols{
+    width:100%;
+    margin-top: -50px;
+
+}   
+
+
+
+
+
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.cardText{
+    font-size: 32px;
+    font-weight: 400;
+    color: white;
+  
+    
+    
+}
+
+.cardBody{
+    background-color: rgb(12, 34, 49);
+    padding: 20px;
+}
+
+.btnContainer {
+
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px;
+  
+} 
+  
+  .cardBtn {
+    flex: 1;
+    margin: 35px 5px 20px ;
+    background-color: #244ac2;
+    color: white;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    
+
+
+    
+  
+  }
+    
+  .card1, .card2, .card3 {
+    margin: 10px; 
+    width: calc(33.33% - 20px); 
+    box-sizing: border-box;
+  }
+  
+  /* .sgvGreater{
+
+    margin:0px 10px ;
+    
+  } */
+
+
+
