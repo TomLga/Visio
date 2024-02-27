@@ -1,190 +1,174 @@
-*
-{
-    margin: 0;
-    padding: 0px 15px;
-    box-sizing: border-box;
- 
-    font-family:sans-serif ;
-    font-weight: 300;
-}
-.navbar{
-    
-    display: flex;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  transition: 0.5s ease;
 }
 
-
-.carImg{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90vw; 
-    height: 80vh;
-
-
-  
+.navbar {
+  display: flex;
+  margin: 0px 3rem;
+  padding: 0px 20px;
 }
-
-#logo{
-    width: 40%;
+.logo {
+  height: 90px;
+  padding-left: 4px;
 }
 
 #menu{
-    width: 8%;
-    margin-left: auto;
-  
-    
+  width: 8%;
+  margin-left: auto;  
+}
+.slideContainer{
+display: flex;
+flex-direction: start;
+justify-content: center;
+overflow: hidden;
+}
+.slideContainer img {
+display: none;
+}
+.slideContainer img.active {
+display: inline-block;
+}
+
+.slideImage{
+width: 90%;
+/* margin: 0 rem; */
+z-index: -1;
+height:40rem;
+}
+
+.nextArrow {
+position: absolute;
+cursor: pointer;
+top: 45%;
+left: 83%;
+width: 8rem;
+z-index: 100;
+}
+
+.iconCont {
+position: absolute;
+top: 77%;
+left: 85%;
+z-index: 200;
+}
+.iconCircle {
+width: 35px;
+margin-left: -5px;
+}
+
+.blueTextBar {
+position: absolute;
+top: 50%;
+z-index: 1000;
+background-color: #244AC2;
+color: white;
+font-size: 19px;
+text-align: center;
+width: 25em;
+height: 4em;
+}
+
+.blueTextBar p {
+margin-top: 6%;
+}
+
+.blackBar {
+position: absolute;
+top: 50%;
+background-color: black;
+width: 100%;
+height: 4rem;
+z-index: -100;
 }
 
 
-.par_Symbols{
-    display: flex;
-    margin-top: 100px;
-    padding-left: 30px;
+/* TEXT SECTION */
+.parSection{
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 80px 5px;
+  flex-wrap: wrap;
+}
+
+.parText {
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 36px;
+  color: #061C2C;
+  width: 55%;
+  padding-left: 15px;
+}
+
+.parIcons {
+  width: 30rem;
 
 }
 
 
-.firstText{
-    word-wrap:break-word;
-    font-size: 24px;
-    font-weight: 300;
-  
+.card-Container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem ;
+  gap: 1rem;
 }
 
-.symbols{
-    width:100%;
-    margin-top: -50px;
 
-}   
+.blueCard{
+  background-color: #061C2C;
+  color:white;
+  padding: 20px;
+  margin-bottom: 3rem;
+  height: auto;
+}
+.blueCard img {
+  height: 5rem;
+  width: 3, 5rem;
+  margin-bottom: 5%;
+}
 
+.cardText {
+  font-size: 17px;
+  font-weight: 300;
+}
 
+.btnCont{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 1rem;
+ 
+}
 
+.card {
+  width: 30%;
+}
+.btnCard img {
+  height: 10px !important;
+  width: 10px !important;
+}
 
+.btnCard {
+  display: flex;
+  background-color: #244AC2;
+  color: white;
+  font-weight: 300;
+  align-items: center;
+  padding: 10px ;
+  align-items: end;
 
-
-.cards{
-    display: flex;
-    flex-wrap: wrap;
+  font-size: 14px;
+  width: 40%;
+  margin-top: -2rem;
+  width: 100% !important;
+  margin-right: 2px;
 
 }
 
-.cardText{
-    font-size: 32px;
-    font-weight: 400;
-    color: white;
-  
-    
-    
-}
-
-.cardBody{
-    background-color: rgb(12, 34, 49);
-    padding: 20px;
-}
-
-.btnContainer {
-
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0px;
-  
-} 
-  
-  .cardBtn {
-    flex: 1;
-    margin: 35px 5px 20px ;
-    background-color: #244ac2;
-    color: white;
-    text-align: left;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 10px;
-    
 
 
-    
-  
-  }
-    
-  .card1, .card2, .card3 {
-    margin: 10px; 
-    width: calc(33.33% - 20px); 
-    box-sizing: border-box;
-  }
-  
-  /* .sgvGreater{
-
-    margin:0px 10px ;
-    
-  } */
-
-
-/* elemenets in hero sections */
-  .blueTextBar {
-    position: absolute;
-    top: 45%;
-    z-index: 1;
-    background-color: #244AC2;
-    color: white;
-    font-size: 19px;
-    text-align: center;
-    width: 30em;
-    height: 5em;
-  }
-  .blueTextBar p {
-    margin-top: 7%;
-  }
-
-  .nextArrow {
-    position: absolute;
-    top: 42%;
-    left: 83%;
-    cursor: pointer;
-    width: 10rem;
-    height: 15rem;
-    
-
-  }
-
-  .imgLoaderCont {
-    position: absolute;
-    top: 85%;
-    left: 80%;
-    z-index: 200;
-  }
-  .imgLoader { 
-    cursor: pointer;
-    width: 65px;
-    margin-left: -5px;
-    padding: 8px;
-  }
-
-  .blackBar {
-    position: absolute;
-    top: 45%;
-    z-index: -1;
-    background-color: black;
-    width: 98.4%;
-    height: 5rem;
-  }
-
-  .slider-outer {
-    position: relative;
-  }
-  .slide-img {
-    width: 90%;
-    z-index: -1;
-    height:40rem;
-  }
-  .slider-inner {
-    display: flex;
-    flex-direction: start;
-   justify-content: center;
-    overflow: hidden;
-  }
-  .slider-inner img {
-    display: none;
-  }
-  .slider-inner img.active {
-    display: inline-block;
-  }
+/* 19, 17, 14 for font size */
