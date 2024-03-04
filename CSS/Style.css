@@ -36,7 +36,7 @@ display: inline-block;
 width: 90%;
 /* margin: 0 rem; */
 z-index: -1;
-height:40rem;
+height:84vh;
 }
 
 .nextArrow {
@@ -50,7 +50,7 @@ z-index: 100;
 
 .iconCont {
 position: absolute;
-top: 95%;
+top: 94%;
 left: 85%;
 z-index: 200;
 }
@@ -122,7 +122,7 @@ z-index: -100;
   background-color: #061C2C;
   color:white;
   padding: 20px;
-  margin-bottom: 3rem;
+  margin-bottom: rem;
   height: auto;
 }
 .blueCard img {
@@ -140,8 +140,10 @@ z-index: -100;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  width: 100%;
-  margin-bottom: 1rem;
+
+  width: 103%;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
  
 }
 .btnCard {
@@ -155,7 +157,9 @@ z-index: -100;
   width: 40%;
   margin-top: -2rem;
   width: 100% !important;
-  margin-right: 2px;
+  margin-right: 12px;
+
+ 
 }
 
 
@@ -169,6 +173,7 @@ z-index: -100;
   
 
 }
+
 
 
 
@@ -193,7 +198,7 @@ z-index: -100;
 
 
 .iconCont{
-  top: 100%;
+  top: 92%;
   left: 80%;
 }
 
@@ -237,7 +242,27 @@ z-index: -100;
   .card-Container {
     margin-left: 60px;
   }
+  .btnCont{
+    width: 100%;
+    margin-right: 0;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+  }
+
+  .btnCard {
+    width: calc(50% - 10px); 
+    margin-top: 10px;
+    margin-right: 0px; 
+    margin-bottom: 0px; 
+  }
+  
+
 }
+
+
+
+
 
 
 
@@ -260,7 +285,7 @@ z-index: -100;
   }
 
   .iconCont{
-    top: 100%;
+    top: 90%;
     left: 75%;
   }
   
@@ -279,20 +304,14 @@ z-index: -100;
   .blackBar{
     height: 3.5rem;
   }
-/* check if Athla is fine with me removing the icons from the parSection if not use below code 
-below: icons on top of par 
-
- .parIcons {
-    width: 25rem;
-    margin-left: 20%;
-      
-  }
-  .parSection {
-    flex-direction: column-reverse; 
-  }*/
  
   .parText{
     width: 100%;
+  }
+  
+  .parIcons {
+    width: 15rem;
+  
   }
   .card-Container {
     margin-left: 45px;
@@ -486,7 +505,7 @@ below: icons on top of par
     }
 
     .parText{
-      font-size:13px;
+      font-size:15px;
     }
     .parIcons {
       width: 20rem;
@@ -525,9 +544,9 @@ below: icons on top of par
       top: 20%;
     }
 
-    .parText{
-      font-size:13px;
-    }
+    /* .parText{
+      font-size:15px;
+    } */
     .parIcons {
       width: 15rem;
     
@@ -574,12 +593,12 @@ below: icons on top of par
       top: 20%;
       display: none;
     }
-
+/* 
     .parText{
       font-size:10px;
-    }
+    } */
     .parIcons {
-      width: 10rem;
+      width: 17rem;
     
     }
     
